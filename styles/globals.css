@@ -10,6 +10,8 @@
 
 /* HeroUI theme overrides */
 :root {
-	--accent: #a72c3c;
-	--background: rgb(218, 243, 205);
+	--accent: #668600;
+	--background: #F5F1E8;
+	--foreground: #286A2B;
+	--warning: #F8BFA8;
 }

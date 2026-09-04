@@ -62,54 +62,14 @@ export const Navbar = () => {
         </div>
 
         <div className="hidden sm:flex items-center gap-2">
-          <Link
-            aria-label="Twitter"
-            href={siteConfig.links.twitter}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <TwitterIcon className="text-muted" />
-          </Link>
-          <Link
-            aria-label="Discord"
-            href={siteConfig.links.discord}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <DiscordIcon className="text-muted" />
-          </Link>
-          <Link
-            aria-label="Github"
-            href={siteConfig.links.github}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <GithubIcon className="text-muted" />
-          </Link>
-          <ThemeSwitch />
-          <div className="hidden lg:flex">{searchInput}</div>
-          <div className="hidden md:flex">
-            <Button
-              className="text-sm font-normal"
-              variant="tertiary"
-              onPress={() => window.open(siteConfig.links.sponsor, "_blank")}
-            >
-              <HeartFilledIcon className="text-danger" />
-              Sponsor
-            </Button>
-          </div>
+          
+          {/* <ThemeSwitch /> */}
+          
         </div>
 
         <div className="flex sm:hidden items-center gap-2">
-          <Link
-            aria-label="Github"
-            href={siteConfig.links.github}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <GithubIcon className="text-muted" />
-          </Link>
-          <ThemeSwitch />
+          
+          {/* <ThemeSwitch /> */}
           <button
             aria-expanded={isMenuOpen}
             aria-label="Toggle menu"
@@ -144,7 +104,7 @@ export const Navbar = () => {
 
       {isMenuOpen && (
         <div className="border-t border-separator sm:hidden">
-          <div className="p-4">{searchInput}</div>
+       
           <ul className="flex flex-col gap-2 px-4 pb-4">
             {siteConfig.navMenuItems.map((item, index) => (
               <li key={`${item.label}-${index}`}>
