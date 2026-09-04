@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+	--font-sans: "font", sans-serif;
+	--font-mono: "monospace", monospace;
+}
+
+/* HeroUI theme overrides */
+:root {
+	--accent: #a72c3c;
+	--background: rgb(218, 243, 205);
+}
