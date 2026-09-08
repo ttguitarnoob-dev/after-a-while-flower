@@ -15,7 +15,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({ className }) => {
   const isLight = resolvedTheme === "light";
 
   const handleToggle = () => {
-    setTheme(isLight ? "dark" : "light");
+    setTheme(isLight ? "light" : "light");
   };
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({ className }) => {
 
   return (
     <button
-      aria-label={`Switch to ${isLight ? "dark" : "light"} mode`}
+      aria-label={`Switch to ${isLight ? "light" : "light"} mode`}
       className={clsx(
         "px-px transition-opacity hover:opacity-80 cursor-pointer",
         "inline-flex items-center justify-center",

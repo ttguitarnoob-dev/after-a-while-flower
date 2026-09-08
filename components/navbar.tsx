@@ -15,6 +15,7 @@ import {
   SearchIcon,
   Logo,
 } from "@/components/icons";
+import Image from "next/image";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,8 +42,7 @@ export const Navbar = () => {
       <header className="mx-auto flex h-16 max-w-[1280px] items-center justify-between gap-4 px-6">
         <div className="flex items-center gap-4">
           <NextLink className="flex items-center gap-1" href="/">
-            <Logo />
-            <p className="font-bold text-inherit">ACME</p>
+            <Image src="/Images/logo-text.png" alt={""} width={200} height={20} className="w-[200px] h-auto"/>
           </NextLink>
           <ul className="hidden lg:flex gap-4 ml-2">
             {siteConfig.navItems.map((item) => (
@@ -117,7 +117,7 @@ export const Navbar = () => {
                         ? "text-danger"
                         : "text-foreground",
                   )}
-                  href="#"
+                  href={item.href}
                 >
                   {item.label}
                 </Link>
