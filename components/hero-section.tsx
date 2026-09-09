@@ -218,19 +218,19 @@ export default function HeroSection() {
 
                     <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center px-7 py-24 text-center sm:px-16 sm:py-28">
                         <p className="mb-5 text-[10px] font-medium uppercase tracking-[0.35em] text-accent sm:text-xs">
-                            Custom Floral Design · Fresh Table Centerpieces
+                            Fresh Blooms · Weekly Delivery
                         </p>
 
                         <h1 className="font-serif text-[clamp(3.2rem,11vw,7rem)] font-medium leading-[0.86] tracking-[-0.045em] text-foreground">
-                            Fresh Vases,
+                            Seasonally Inspired,
                             <br />
-                            <span className="italic">crafted</span>
+                            <span className="italic">beautifully</span>
                             <br />
-                            Weekly.
+                            Arranged.
                         </h1>
 
                         <p className="mt-8 max-w-xl text-sm leading-7 text-[color-mix(in_srgb,var(--foreground)_68%,transparent)] sm:text-base">
-                            Thoughtful floral design for your tables, delivered freshly every week
+                            Let nature set the table. A fresh touch, delivered to your door.
                         </p>
 
                         <div className="mt-9 flex w-full flex-row gap-3 items-center justify-center">

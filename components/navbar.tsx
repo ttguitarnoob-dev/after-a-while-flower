@@ -42,7 +42,8 @@ export const Navbar = () => {
       <header className="mx-auto flex h-16 max-w-[1280px] items-center justify-between gap-4 px-6">
         <div className="flex items-center gap-4">
           <NextLink className="flex items-center gap-1" href="/">
-            <Image src="/Images/logo-text.png" alt={""} width={200} height={20} className="w-[200px] h-auto"/>
+            {/* <Image src="/Images/logo-text.png" alt={""} width={200} height={20} className="w-[200px] h-auto"/> */}
+            <img src="/Images/logo-text.webp" width={200}/>
           </NextLink>
           <ul className="hidden lg:flex gap-4 ml-2">
             {siteConfig.navItems.map((item) => (
