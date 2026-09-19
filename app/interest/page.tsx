@@ -12,13 +12,21 @@ import {
   TextArea,
   TextField,
 } from "@heroui/react";
+import { useState } from "react";
 
 
 
 export default function InterestPage() {
-  const API = "https://web-dev2.kitty-cottage.com/api/flowers/inquiry"
+  // const API = "https://web-dev2.kitty-cottage.com/api/flowers/inquiry"
+  const API = "https://kitty-cottage.kitty-cottage.com/api/flowers/inquiry"
+
+
+  const [message, setMessage] = useState("")
+
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setMessage("The user experience of this form is not finished yet, but your inquiry did go through. Thank you!")
+    console.log("SENDINGTO API", API)
 
     const formData = new FormData(e.currentTarget);
     const data: Record<string, string> = {};
@@ -35,6 +43,8 @@ export default function InterestPage() {
         },
         body: JSON.stringify(data),
       });
+
+     
 
       if (!response.ok) {
         throw new Error('Network response was not ok');
@@ -126,6 +136,7 @@ export default function InterestPage() {
             </Button>
           </div>
         </Form>
+        <p>{message}</p>
   
         <section className="mt-6 text-center text-sm text-default-500">
           <Link href="/privacy" className="underline underline-offset-4">
