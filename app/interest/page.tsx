@@ -13,8 +13,11 @@ import {
   TextField,
 } from "@heroui/react";
 
+
+
 export default function InterestPage() {
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const API = "https://web-dev2.kitty-cottage.com/api/flowers/inquiry"
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const formData = new FormData(e.currentTarget);
@@ -24,7 +27,25 @@ export default function InterestPage() {
       data[key] = value.toString();
     });
 
-    alert(`Form submitted with: ${JSON.stringify(data, null, 2)}`);
+    try {
+      const response = await fetch(API, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const result = await response.json();
+      console.log('Success:', result);
+      window.location.href = '/success';
+    } catch (error) {
+      console.error('Error:', error);
+    }
   };
 
   return (
