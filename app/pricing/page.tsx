@@ -17,7 +17,7 @@ export default function PricingPage() {
           <Card.Content className="pt-4">
             <p className="text-sm font-semibold text-black mb-2">1-3 focal flowers, complemented by seasonal greenery and filler</p>
             <Card.Description className="text-black/50 leading-relaxed">
-              A simple, delicate touch for your tables. Designed for those looking for a subtle floral accent while keeping the table open and uncluttered.
+              A simple, delicate touch for your tables. Designed for those looking for a subtle floral accent while keeping the table open.
             </Card.Description>
           </Card.Content>
         </Card>

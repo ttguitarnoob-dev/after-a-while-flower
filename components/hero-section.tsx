@@ -230,7 +230,7 @@ export default function HeroSection() {
                         </h1>
 
                         <p className="mt-8 max-w-xl text-sm leading-7 text-[color-mix(in_srgb,var(--foreground)_68%,transparent)] sm:text-base">
-                            Let nature set the table. A fresh touch, delivered to your door.
+                            Let nature set the table. A fresh touch, delivered straight to your business.
                         </p>
 
                         <div className="mt-9 flex w-full flex-row gap-3 items-center justify-center">
